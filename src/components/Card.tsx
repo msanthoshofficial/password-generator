@@ -29,10 +29,7 @@ function Card() {
 	}, [length, numbers, symbols, generatePassword]);
 
 	return (
-		<div
-			className="card bg-primary text-primary-content "
-			style={{ minWidth: "30rem" }}
-		>
+		<div className="card bg-primary text-primary-content min-w-96 ">
 			<div className="card-body">
 				<div className="flex gap-2 justify-center items-center">
 					<div className="form-control w-full">
@@ -40,7 +37,6 @@ function Card() {
 							type="text"
 							placeholder="passsword"
 							readOnly
-							disabled
 							value={password}
 							className="input input-bordered w-full max-w-xs"
 							ref={passswordRef}
